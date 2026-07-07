@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>PokéTrok - Accueil</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <!-- Header -->
+
+        <header>
+            <a href="index.html"><img class="logo" src="img/logo.png" alt="image pokéball"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="connexion.html">Connexion</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1> Bienvenue sur PokéTrok !</h1>
+            <p>Collectionne des cartes et partage les avec tes amis</p>
+
+            <!-- Filtres -->
+
+            <div>
+                <div class="type">
+                    <button>Tous</button>
+                    <button data-type="feu">Feu</button>
+                    <button data-type="eau">Eau</button>
+                    <button data-type="plante">Plante</button>
+                    <button data-type="électrik">Électrik</button>
+                </div>
+                <button class="booster">Ouvrir un booster</button>
+            </div>             
+
+            <!-- Section -->   
+
+            <section>  
+                <h2>Type feu</h2>
+                <article class="carte" data-type="feu">
+                    <img src="img/salameche.png" alt="salamèche">
+                    <h3>Salamèche</h3>
+                    <span class="badge">Feu</span>
+                    <button class="favori">☆</button>
+                </article>
+            </section>
+            <section>
+                <h2>Type eau</h2>
+                <article class="carte" data-type="eau">
+                    <img src="img/carapuce.png" alt="carapuce">
+                    <h3>Carapuce</h3>
+                    <span class="badge">Eau</span>
+                    <button class="favori">☆</button>
+                </article>
+            </section>
+            <section>
+                <h2>Type plante</h2>
+                <article class="carte" data-type="plante">
+                    <img src="img/bulbizarre.png" alt="bulbizarre">
+                    <h3>Bulbizarre</h3>
+                    <span class="badge">Plante</span>
+                    <button class="favori">☆</button>
+                </article>
+            </section>
+            <section>
+                <h2>Type électrik</h2>
+                <article class="carte" data-type="électrik">
+                    <img src="img/pikachu.png" alt="pikachu">
+                    <h3>Pikachu</h3>
+                    <span class="badge">Électrik</span>
+                    <button class="favori">☆</button>
+                </article>
+            </section>
+            <button>⇄</button>
+        </main>
+
+        <!-- Footer -->
+         
+        <footer>
+            PokéTrok — projet CDI 2026
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
