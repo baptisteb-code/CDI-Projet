@@ -1,0 +1,19 @@
+.carte{
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px;
+    width:220px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carte img{
+    height: 150px;
+    object-fit: contain;
+}
+
+.grille { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+}

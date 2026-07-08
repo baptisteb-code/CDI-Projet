@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>PokéTrok - Profil</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <!-- Header -->
+
+        <header>
+            <a href="index.html"><img class="logo" src="img/logo.png" alt="pokeball"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                </ul>
+                <button>Déconnexion</button>
+            </nav>
+        </header>
+        <main>
+            <div class="infos-profil">
+                <h1>Mon profil</h1>
+                <p>Sacha</p>
+                <p>sacha@exemple.fr</p>
+            </div>
+
+            <section class="mes-cartes">
+                <h2>Ma collection</h2>
+                <div class="grille">
+                    <article class="carte" data-type="feu">
+                        <img src="img/salameche.png" alt="salamèche">
+                        <h3>Salamèche</h3>
+                        <span class="badge">Feu</span>
+                        <button class="favori">☆</button>
+                    </article>
+
+                    <article class="carte" data-type="eau">
+                        <img src="img/carapuce.png" alt="carapuce">
+                        <h3>Carapuce</h3>
+                        <span class="badge">Eau</span>
+                        <button class="favori">☆</button>
+                    </article>
+
+                    <article class="carte" data-type="plante">
+                        <img src="img/bulbizarre.png" alt="bulbizarre">
+                        <h3>Bulbizarre</h3>
+                        <span class="badge">Plante</span>
+                        <button class="favori">☆</button>
+                    </article>
+
+                    <article class="carte" data-type="electrik">
+                        <img src="img/pikachu.png" alt="pikachu">
+                        <h3>Pikachu</h3>
+                        <span class="badge">Électrik</span>
+                        <button class="favori">☆</button>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+         
+        <footer>
+            <p>PokéTrok — projet CDI 2026</p>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

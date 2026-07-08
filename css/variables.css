@@ -1,0 +1,10 @@
+:root{
+    --couleur-principale: #d32f2f;
+    --couleur-fond: #f2f2f2;
+    --couleur-texte: #222222;
+    --couleur-accent: #ffcb05;
+    --type-feu: #ff7043;
+    --type-eau: #42a5f5;
+    --type-plante: #66bb6a;
+    --type-electrik: #fbc02d;
+}
