@@ -1,0 +1,14 @@
+.titre{
+    text-align: center;
+    
+}
+
+.titre h1{
+    font-size: 60px;
+}
+
+.titre p{
+    font-size: 23px;
+    margin-bottom: 65px;
+    color: rgb(86, 86, 86);
+}

@@ -1,1 +1,88 @@
-@import
+
+
+button{
+    border: none;
+    cursor: pointer;
+    border-radius: 999px;
+    padding: 8px 18px;
+    font-family: inherit;
+    transition: transform 0.15s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.type button {
+    background-color: rgb(139, 139, 139);
+    color: white;
+    padding: 8px 25px;
+}
+
+.type{
+    display: flex;
+    gap: 12px;
+}
+
+.type button[data-type="feu"]{
+    background:var(--type-feu);
+}
+
+.type button[data-type="eau"]{
+    background:var(--type-eau);
+}
+
+.type button[data-type="plante"]{
+    background:var(--type-plante);
+}
+
+.type button[data-type="electrik"]{
+    background:var(--type-electrik);
+}
+
+.booster{
+    background: var(--couleur-accent);
+    border-radius: 15px;
+    color: black;
+    font-size: 21px;
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease;
+}
+
+.booster:hover { 
+    transform: scale(1.03); 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.barre-action{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.favori{
+    background: none;
+    font-size: 20px;
+}
+
+.bouton-echange{
+    position: fixed;
+    bottom: 60px; right: 50px;
+    width: 75px; height: 75px;
+    border-radius: 50%;
+    font-size: 35px;
+    background-color: #42a5f5;
+}
+
+form button{
+    margin-top: 20px;
+    background: var(--couleur-accent);
+    font-weight: 800;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    display: block;
+    margin: 20px auto 0;
+
+}

@@ -1,0 +1,43 @@
+label{
+    display:block;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+input{
+    display: block;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 15px;
+    width: 100%;
+}
+
+.connexion{
+    text-align: center;
+    font-size: 45px;
+    margin-top: 100px;
+}
+form{
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+form p{
+    text-align: center;
+}
+
+
+
+
+
+.inscription{
+    text-align: center;
+    font-size: 45px;
+    margin-top: 100px;
+}

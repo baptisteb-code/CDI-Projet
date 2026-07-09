@@ -1,0 +1,21 @@
+footer{
+    background-color: #1c1c1c;
+    color: rgb(194, 194, 194);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p{
+    margin: 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+}
+
+footer {
+    margin-top: auto;   
+}

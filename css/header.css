@@ -29,6 +29,13 @@ nav a{
     text-decoration: none;
 }
 
+nav button{
+    background: none;
+    color: white;
+    font-size: 22px;
+}
+
+
 
 .logo{
     height: 100px;

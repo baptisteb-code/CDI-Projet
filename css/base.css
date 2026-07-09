@@ -1,17 +1,26 @@
 
 body{
     font-family: "Nunito", sans-serif;
+    margin:0;
+    background: var(--couleur-fond);
+    min-height: 100vh;       /*la page occupe au moins tout l'écran*/
+    display: flex;
+    flex-direction: column;
 }
 
 *{
     box-sizing: border-box;
 }
 
-img { max-width: 100%; height: auto; }
-
-main { max-width: 1100px; margin: 0 auto; }
-
-body{
-    margin:0;
-    background: var(--couleur-fond);
+img {
+    max-width: 100%;
+    height: auto;
 }
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
