@@ -45,8 +45,10 @@ button:hover {
     border-radius: 15px;
     color: black;
     font-size: 21px;
+    font-weight: 650;
     box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.4s ease;
+    animation: pulse 2s ease infinite;
 }
 
 .booster:hover { 
@@ -85,4 +87,50 @@ form button{
     display: block;
     margin: 20px auto 0;
 
+}
+
+
+.bouton-carte{
+    display: flex;
+    gap:12px;
+    margin-top:11px
+}
+
+.favori-carte{
+    background-color: #cbcbcb;
+    font-size: 17px;
+    border-radius: 13px;
+    font-weight: 650;
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.echange{
+    background: var(--couleur-accent);
+    font-size: 17px;
+    border-radius: 13px;
+    font-weight: 650;
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.booster-profil{
+    background: var(--couleur-accent);
+    border-radius: 15px;
+    color: black;
+    font-size: 21px;
+    font-weight: 650;
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease;
+}
+
+.booster-profil:hover { 
+    transform: scale(1.03); 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+@keyframes pulse {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.06); }
+    100% { transform: scale(1); }
 }

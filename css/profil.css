@@ -1,0 +1,59 @@
+.infos-profil{
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 30px;
+    padding-top: 10px;
+}
+
+.infos-profil h1{
+    margin: 0 0 15px;
+    font-size: 35px;
+}
+
+.infos-profil p{
+    margin: 0;
+
+}
+
+.nom{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.mail{
+    font-size: 20px;
+}
+
+.rond-profil{
+    display: flex;
+    background-color: red;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    font-weight: 700;
+    color: white;
+}
+
+
+.ligne-profil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.booster-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    
+}
+
+.booster-profil{
+    animation: pulse 2.5s ease infinite;
+}

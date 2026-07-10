@@ -4,7 +4,6 @@ header{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: px;
     padding-left: 10px;
 }
 
@@ -34,8 +33,6 @@ nav button{
     color: white;
     font-size: 22px;
 }
-
-
 
 .logo{
     height: 100px;
