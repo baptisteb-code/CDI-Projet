@@ -23,6 +23,36 @@
                 <button>Déconnexion</button>
             </nav>
         </header>
+        <div class="modale-overlay">
+            <div class="modale">
+                <div class="header-modale">
+                    <button class="fermer-modale">X</button>
+                    <h2>Proposer un échange</h2>
+                </div>
+                <form action="#" method="post">
+                    <div class="content-modale">
+                        <div class="select-destinataire">
+                            <label for="destinataire">Destinataire</label>
+                            <select name="destinataire" id="destinataire">
+                                <option value="team-rocket92">Team Rocket92</option>
+                                <option value="dracaufeudu78">Dracaufeudu78</option>    
+                            </select>
+                        </div>    
+                        <div class="select-carte">
+                            <label for="carte">Carte</label>
+                            <select name="carte" id="carte">
+                                <option value="pikachu">Pikachu</option>
+                                <option value="salameche">Salamèche</option>
+                            </select>
+                        </div>
+                    </div>    
+                    <div class="decision-envoi">
+                        <button type="button" class="annuler-envoi">Annuler</button>
+                        <button type="submit" class="envoyer">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
         <main>
             <div class="titre">
                 <h1> Bienvenue sur PokéTrok !</h1>
