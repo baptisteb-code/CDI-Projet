@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-bottom: 15px;
 }
 
 .fermer-modale{
@@ -52,4 +53,21 @@
 
 .header-modale h2 {
     margin: 0;
+}
+
+.modale{
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+.modale-overlay{
+    display: none;
+}
+
+.ouverte{
+    display: block;
 }
