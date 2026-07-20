@@ -1,31 +1,3 @@
-// console.log("PokéTrok JS chargé !");
-
-// const prenom="Baptiste";
-// console.log(prenom);
-
-// let total=0;
-// total++;
-// total--;
-// total=total+5
-// total-=10
-// console.log(total)
-
-// if(total>2){
-//     console.log("Total sup à deux");
-// }
-
-// else { console.log("peu"); }
-
-// const type = ["feu", "eau", "plante", "electrik"];
-// type[0]
-// type.length
-
-// type.forEach((t) => {console.log("Type: " + t);});
-
-// document.querySelector("h1").textContent ="Hey"
-
-
-
 
 // FAVORIS
 
@@ -111,4 +83,71 @@ const couleursTypes = {
 
 //LOCALSTORAGE
 
-const email = document.querySelector ("# email")
+const champEmail = document.querySelector ("#email")
+
+if (champEmail) {
+
+    champEmail.addEventListener("input", () => {
+        localStorage.setItem("email", champEmail.value);
+    });
+
+    const emailMemorise = localStorage.getItem("email");
+
+    if (emailMemorise) {
+        champEmail.value = emailMemorise;
+    }
+}
+
+
+
+
+
+// API
+for (let i = 1; i <= 500; i = i + 1) {
+    
+fetch("https://pokeapi.co/api/v2/pokemon/" + i)
+
+.then((reponse)=> reponse.json())
+.then((pokemon) => {
+  afficherCarte(pokemon);
+});
+
+
+}
+const traductionTypes = {
+    fire: "feu",
+    water: "eau",
+    grass: "plante",
+    electric: "electrik"
+};
+
+
+
+
+function afficherCarte(pokemon) {
+
+    const typeFr = traductionTypes[pokemon.types[0].type.name];
+    if (!typeFr) {
+        return;
+    }
+
+    const carte = document.createElement("article");
+    carte.className = "carte";
+    carte.dataset.type = typeFr;
+
+    carte.innerHTML = `
+        <img src="${pokemon.sprites.other["official-artwork"].front_default}" alt="${pokemon.name}">
+        <h3>${pokemon.name}</h3>
+        <div class="detail-carte">
+            <span class="badge">${typeFr}</span>
+            <button class="favori">☆</button>
+        </div>
+    `;
+
+    const grille = document.querySelector(`section[data-type="${typeFr}"] .grille`);
+    grille.appendChild(carte);
+
+    const etoile = carte.querySelector(".favori");
+    etoiles.forEach
+}
+
