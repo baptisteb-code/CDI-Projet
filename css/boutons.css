@@ -96,13 +96,7 @@ button:hover {
     margin-top:11px
 }
 
-.favori-carte{
-    background-color: #cbcbcb;
-    font-size: 17px;
-    border-radius: 13px;
-    font-weight: 650;
-    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.1);
-}
+
 
 .echange{
     background: var(--couleur-accent);
@@ -156,4 +150,21 @@ button:hover {
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     display: block;
     margin: 20px auto 0;
+}
+
+
+.favori-carte.actif {
+    color:var(--couleur-accent);
+}
+
+.favori-carte:hover{
+    transform: scale(1.3);
+}
+
+.favori-carte{
+    font-size: 25px;
+    font-weight: 600;
+    transition: transform 0.13s ease;
+    border:15px;
+    background: none;
 }

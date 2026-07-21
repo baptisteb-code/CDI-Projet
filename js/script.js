@@ -111,9 +111,8 @@ fetch("https://pokeapi.co/api/v2/pokemon/" + i)
 .then((pokemon) => {
   afficherCarte(pokemon);
 });
-
-
 }
+
 const traductionTypes = {
     fire: "feu",
     water: "eau",
@@ -145,9 +144,85 @@ function afficherCarte(pokemon) {
     `;
 
     const grille = document.querySelector(`section[data-type="${typeFr}"] .grille`);
+
+    if(!grille){return}
     grille.appendChild(carte);
 
+
+
+    // ETOILE JAUNE
+
     const etoile = carte.querySelector(".favori");
-    etoiles.forEach
+
+      etoile.addEventListener("click",(event)=>{
+        event.stopPropagation();
+        etoile.classList.toggle("actif")
+        if (etoile.classList.contains("actif")){
+          etoile.textContent ="★";
+        }
+        else{
+          etoile.textContent = "☆"
+        }
+      })
+
+
+carte.addEventListener("click",()=>{
+  window.location.href = `carte.html?id=${pokemon.id}`;
+});
+      
 }
 
+
+
+//PAGE DETAIL
+
+
+
+const fiche = document.querySelector(".fiche")
+if (fiche){
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+
+fetch("https://pokeapi.co/api/v2/pokemon/" + id)
+.then ((reponse)=> reponse.json())
+.then ((pokemon) => {
+  document.querySelector(".infos-pokemon h1").textContent= pokemon.name;
+
+  document.querySelector(".image-detail").src= pokemon.sprites.other["official-artwork"].front_default;
+
+  const typeFr = traductionTypes[pokemon.types[0].type.name];
+
+  document.querySelector(".badge").textContent = typeFr;
+
+  document.querySelector(".infos-pokemon").dataset.type = typeFr;
+
+  document.querySelector(".pv").textContent = pokemon.stats[0].base_stat;
+
+  document.querySelector(".attaque").textContent = pokemon.stats[1].base_stat;
+
+  document.querySelector(".defense").textContent = pokemon.stats[2].base_stat;
+
+  document.querySelector(".taille").textContent = pokemon.height/10 + "m";
+
+  document.querySelector(".poids").textContent = pokemon.weight/10 +"kg";
+
+  document.title = "PokéTrok - " + pokemon.name;
+
+ })
+  
+}
+
+const etoileCarte = document.querySelectorAll(".favori-carte");
+
+etoileCarte.forEach((etoile) => {
+    etoile.addEventListener("click", () => {
+    etoile.classList.toggle("actif");
+
+    if (etoile.classList.contains("actif")) {
+      etoile.textContent = "★";
+    } 
+    else {
+      etoile.textContent = "☆";
+    }
+  });
+});
